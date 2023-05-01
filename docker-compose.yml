@@ -10,6 +10,7 @@ services:
         ports:
             - '1200:1200'
         environment:
+            GITHUB_ACCESS_TOKEN: ${GITHUB_ACCESS_TOKEN}
             NODE_ENV: production
             CACHE_TYPE: redis
             REDIS_URL: 'redis://redis:6379/'
